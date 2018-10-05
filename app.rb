@@ -13,10 +13,8 @@ class App < Sinatra::Base
 
   post '/checkout' do
     purchases = Purchase.new(params[:item])
-    @purchases = purchases.collect do |item|
-      item
-    end
-    @session = (params[:item])
+    
+    @session = session
     erb :checkout
   end
 
