@@ -12,7 +12,10 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
-    @item = params = [:item][][:name]
+    purchases = params[:item][][:name]
+    @purchases = purchases.collect do |item|
+      item
+    end
     erb :checkout
   end
 end
