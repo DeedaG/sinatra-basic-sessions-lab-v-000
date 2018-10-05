@@ -16,11 +16,9 @@ class App < Sinatra::Base
     @purchases = purchases.collect do |item|
       item
     end
+    @session[:item] = (params[:item])
     erb :checkout
   end
 
-  get '/hey' do
-    @session[:item] = (params[:item])
-  end
 
 end
