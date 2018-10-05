@@ -1,9 +1,9 @@
 class Purchase
 
-attr_reader :item
+  attr_reader :item
 
-def initialize(params)
-  @item = params[:item]
-end
+  def initialize(params)
+    @item = params[:item]
+  end
 
 end
