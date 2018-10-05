@@ -19,7 +19,7 @@ class App < Sinatra::Base
     erb :checkout
   end
 
-  get '/sets' do
+  get '/hey' do
     @session[:item] = (params[:item])
   end
 
