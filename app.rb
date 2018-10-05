@@ -16,7 +16,7 @@ class App < Sinatra::Base
     @purchases = purchases.collect do |item|
       item
     end
-    @session[:item] = (params[:item])
+    @session = (params[:item])
     erb :checkout
   end
 
