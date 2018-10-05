@@ -18,4 +18,9 @@ class App < Sinatra::Base
     end
     erb :checkout
   end
+
+  get '/sets' do
+    @session = session 
+  end
+  
 end
