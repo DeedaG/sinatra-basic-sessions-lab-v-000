@@ -5,8 +5,7 @@
 </head>
 <body>
   <h1>Shopping Cart</h1>
-  <% @purchases.each do |item| %>
-  <%=item %>
+  <%=session[:item] %>
   <%end%>
 
 </body>
