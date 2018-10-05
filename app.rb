@@ -4,7 +4,7 @@ class App < Sinatra::Base
 
   configure do
     enable :sessions
-    set :session_secret, "secret"
+    set :session_secret, "learn_sinatra"
   end
 
   get '/' do
@@ -20,7 +20,7 @@ class App < Sinatra::Base
   end
 
   get '/sets' do
-    @session = session 
+    @session = session
   end
   
 end
