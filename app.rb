@@ -22,5 +22,5 @@ class App < Sinatra::Base
   get '/sets' do
     @session = session
   end
-  
+
 end
