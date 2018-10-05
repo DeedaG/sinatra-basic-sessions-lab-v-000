@@ -20,7 +20,7 @@ class App < Sinatra::Base
   end
 
   get '/sets' do
-    @session = session
+    @session[:item] = (params[:item])
   end
 
 end
